@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>IA</title>
+    <link rel="shortcut icon" href="images/ihec.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="box-questions">
+        <div class="header">
+            <p>Jeu de l'IA</p>
+            <img src="images/LOGO IHEC PNG (HD).png" width="40%" style="background-color: white;" alt="">
+        </div>
+        <div>
+            <div class="question-container">
+                <label for="userResponse">Qu'est-ce que l'apprentissage supervisé ?</label>
+                <textarea id="userResponse" rows="4" cols="50"></textarea>
+                <button class="btn-submit" id="btn-submit" onclick="sendMessage()">Submit</button>
+                <button class="btn-submit" id="btn-submit" onclick="userResponse.value = ''">Clear</button>
+            </div>
+            <div class="response-container">
+                <label for="chatGPTResponse">Réponse de ChatGPT</label>
+                <p id="chatGPTResponse"></p>
+                
+            </div><hr>
+
+            <div class="question-container">  
+                <label for="userResponse2">Comment fonctionne l'ensemble d'entraînement ? </label>
+                <textarea id="userResponse2" rows="4" cols="50"></textarea>
+                <button class="btn-submit" id="btn-submit" onclick="sendMessage2()">Submit</button>
+                <button class="btn-submit" id="btn-submit" onclick="userResponse2.value = ''">Clear</button>
+            </div>
+            <div class="response-container">
+                <label for="chatGPTResponse2">Réponse de ChatGPT</label>
+                <p id="chatGPTResponse2"></p>
+            </div><hr>
+
+            <div class="question-container">
+                <label for="userResponse3">Exemple d'algorithme supervisé ?</label>
+                <textarea id="userResponse3" rows="4" cols="50"></textarea>
+                <button class="btn-submit" id="btn-submit" onclick="sendMessage3()">Submit</button>
+                <button class="btn-submit" id="btn-submit" onclick="userResponse2.value = ''">Clear</button>
+            </div>
+            <div class="response-container">
+                <label for="chatGPTResponse3">Réponse de ChatGPT</label>
+                <p id="chatGPTResponse3"></p>
+            </div><hr>
+            
+            <div class="question-container">
+                <label for="userResponse4">Qu'est-ce qu'une étiquette en ML supervisé ?</label>
+                <textarea id="userResponse4" rows="4" cols="50"></textarea>
+                <button class="btn-submit" id="btn-submit" onclick="sendMessage4()">Submit</button>
+                <button class="btn-submit" id="btn-submit" onclick="userResponse4.value = ''">Clear</button>
+            </div>
+            <div class="response-container">
+                <label for="chatGPTResponse4">Réponse de ChatGPT</label>
+                <p id="chatGPTResponse4"></p>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
